@@ -1,8 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+/*Заходим на сайт fonts.google.com - выбираем шрифт - справа "Embed" - копируем код вначало .css или в блок <style> в .php*/
+
 .coffee-list {
     background-image: url("img/background.jpg");
     background-size: cover;
 }
 
-.coffe-item img {
+.coffee-item {
+    background-color: black;
+    margin: 15px 0;
+    border-radius: calc(100px / 2);
+    /* transition: background-color 300ms transform 300ms; */
+    transition: all 300ms;
+    cursor: pointer;
+    
+}
+
+.coffee-item img {
     height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.coffee-item span {
+    font-family: 'Grandstander', sans-serif;
+    color: white;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.coffee-item:hover {
+    background-color: rgba(50,50,50,0.7);
+    transform: scale(1.05);
+}
+
+.coffee-oper {
+    background-color: grey;
+    padding: 1rem;
+}
+
+.display {
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: 'Grandstander', sans-serif;
+}
+
+.cup-container {
+    margin-top: 2rem;
+    
+}
+
+.btn {
+    border-radius: 20px;
+}
+.cup {
+    width: 100%;
+}
+
+.atm {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.change-container {
+    min-height: 5rem;
+    background-color: lightgrey;
+    border: 2px solid darkgrey;
+    border-radius: 0.5rem;
 }
