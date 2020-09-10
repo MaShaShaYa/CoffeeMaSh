@@ -19,23 +19,23 @@
         
         <div class="col-6 coffee-list d-flex flex-column justify-content-around">
             
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="makeCoffee('Американо',50)">
                 <img src="img/americano.png" alt="Американо">
                 <span>Американо - 50 руб.</span>
             </div>
             
-            <div class="coffee-item">
-                <img src="img/cappuccino.png" alt="Американо">
+            <div class="coffee-item" onclick="makeCoffee('Капучино',73)">
+                <img src="img/cappuccino.png" alt="Капучино">
                 <span>Капучино - 73 руб.</span>
             </div>
             
-            <div class="coffee-item">
-                <img src="img/espresso.png" alt="Американо">
+            <div class="coffee-item" onclick="makeCoffee('Эспрессо',61)">
+                <img src="img/espresso.png" alt="Эспрессо">
                 <span>Эспрессо - 61 руб.</span>
             </div>
             
-            <div class="coffee-item">
-                <img src="img/latte.jpg" alt="Американо">
+            <div class="coffee-item" onclick="makeCoffee('Латтэ',112)">
+                <img src="img/latte.jpg" alt="Латтэ">
                 <span>Латтэ - 112 руб.</span>
             </div>
             
@@ -46,7 +46,7 @@
                 
                 <div class="col-6">
                     <div class="display">
-                        <div class="p">Выберите кофе</div>
+                        <div class="display-text">Выберите кофе</div>
                             <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                             </div>
@@ -86,6 +86,8 @@
     </div>
 </div>
     <!-- Optional JavaScript -->
+    <!-- <script src="lesson.js"></script> -->
+    <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
