@@ -59,6 +59,8 @@
 }
 .cup {
     width: 100%;
+    display: none;
+    opacity: 0;
 }
 
 .atm {
@@ -71,6 +73,7 @@
     background-color: lightgrey;
     border: 2px solid darkgrey;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .red {

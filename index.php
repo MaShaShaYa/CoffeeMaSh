@@ -19,22 +19,22 @@
         
         <div class="col-6 coffee-list d-flex flex-column justify-content-around">
             
-            <div class="coffee-item" onclick="makeCoffee('Американо',50)">
+            <div class="coffee-item" onclick="makeCoffee('Американо',50, this)">
                 <img src="img/americano.png" alt="Американо">
                 <span>Американо - 50 руб.</span>
             </div>
             
-            <div class="coffee-item" onclick="makeCoffee('Капучино',73)">
+            <div class="coffee-item" onclick="makeCoffee('Капучино',73, this)">
                 <img src="img/cappuccino.png" alt="Капучино">
                 <span>Капучино - 73 руб.</span>
             </div>
             
-            <div class="coffee-item" onclick="makeCoffee('Эспрессо',61)">
+            <div class="coffee-item" onclick="makeCoffee('Эспрессо',61, this)">
                 <img src="img/espresso.png" alt="Эспрессо">
                 <span>Эспрессо - 61 руб.</span>
             </div>
             
-            <div class="coffee-item" onclick="makeCoffee('Латтэ',112)">
+            <div class="coffee-item" onclick="makeCoffee('Латтэ',112, this)">
                 <img src="img/latte.jpg" alt="Латтэ">
                 <span>Латтэ - 112 руб.</span>
             </div>
@@ -48,7 +48,7 @@
                     <div class="display">
                         <div class="display-text">Выберите кофе</div>
                             <div class="progress">
-                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%; transition: none;"></div>
                             </div>
                         
                     </div>
@@ -75,7 +75,7 @@
                         <img src="img/bill_acc.png" alt="" class="atm">
                     </div>
                     
-                    <button class="btn btn-primary btn-block my-2">Сдача</button>
+                    <button class="btn btn-primary btn-block my-2 change-button">Сдача</button>
                     <div class="change-container">возьмите ваши денюжки</div>
                     
                 </div>
@@ -85,8 +85,16 @@
         
     </div>
 </div>
+
+<div class="money">
+    
+    <img src="img/50rub.jpg" alt="" data-cost="50">
+    <img src="img/100rub.jpg" alt="" data-cost="100">
+    <img src="img/500rub.jpg" alt="" data-cost="500">
+    
+</div>
     <!-- Optional JavaScript -->
-    <!-- <script src="lesson.js"></script> -->
+<!--     <script src="lesson.js"></script> -->
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

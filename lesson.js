@@ -233,3 +233,11 @@ changeCup.onclick=function() {
     disp.style.backgroundColor="yellow";
     disp.classList.toggle("red"); // toggle включаетВыключает к объекту htmpl "стилевые" свойства
 }
+
+let coffeeButtons=document.querySelectorAll(".coffee-item");
+for (let i=0; i<coffeeButtons.length; i++) {
+    coffeeButtons[i].onclick=function() {
+        console.log(this);
+    }
+}
+
